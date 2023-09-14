@@ -1,0 +1,7 @@
+#This code to implement a chat server that listens on a specific host and port is shared between multiple clients.
+#The server creates a socket and listens on a specific host and port, waiting for connections from clients.
+#When the client establishes a connection, the server sends it the message "NICK" and then the client's nickname.
+#After the nickname, the server stores it in the "nicknames" list and creates a connection with the users , which adds to the "clients" lists.
+#The server simply responds to messages from clients, sending them to all used clients using the "broadcast" function. 
+#If the client loses the connection, the server will be removed from the list of "clients" and "nicknames", closed the connection and connecting users to its connection.
+#The code uses connections to serve multiple clients simultaneously, providing them with a single solution at time of use.
